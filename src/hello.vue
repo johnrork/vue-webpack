@@ -1,6 +1,6 @@
 <template>
     <div class="greet">
-        Hello {{thing}}
+        Howdy, {{thing}}
     </div>
 </template>
 
