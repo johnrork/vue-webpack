@@ -1,5 +1,5 @@
 <template>
-    <div class="greet">
+    <div class="greet" @click=click>
         Howdy, {{thing}}
     </div>
 </template>
@@ -11,6 +11,12 @@
     export default {
         data(){
             return {thing: 'world'}
+        },
+        methods: {
+            click(){
+                console.log("clicked")
+                this.thing = 'john'
+            }
         }
     }
 </script>
